@@ -7,7 +7,7 @@
       header: {
         left: 'prev,next today',
         center: 'title',
-        right: 'listDay,listWeek,month'
+        right: 'listDay,listWeek,agendaDay,agendaWeek,month'
       },
 
       // customize the button names,
@@ -19,6 +19,7 @@
 
       defaultView: 'listWeek',
       defaultDate: '2016-09-12',
+      hiddenDays: [ 0 ],
       navLinks: true, // can click day/week names to navigate views
       editable: true,
       eventLimit: true, // allow "more" link when too many events
