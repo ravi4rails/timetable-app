@@ -1,0 +1,18 @@
+<%= form_for @department, :remote => true do |f| %>
+  <div class="modal-body">
+    <div class="error_explanation">
+    </div>
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control input-lg" %>
+    </div>
+    <div class="field">
+      <%= f.label :nickname %>
+      <%= f.text_field :nickname, class: "form-control input-lg" %>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-lg btn-default" data-dismiss="modal">Close</button>
+    <%= f.submit "Save Department", class: "btn btn-lg btn-primary" %>
+  </div>
+<% end %>
